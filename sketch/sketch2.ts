@@ -4,6 +4,7 @@ function setup() {
 function draw() {
   // CENTER OF SCREEN
   translate(width / 2, height / 2);
-
-  rect(0, 0, 200, 200);
+  circle(0, 0, 300);
 }
+
+export {};
