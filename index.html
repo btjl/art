@@ -1,25 +1,83 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
-      integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"
-      integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="build/build.js"></script>
-    <!-- <link rel="shortcut icon" href="https://p5js.org/assets/img/favicon.ico" />
-    <link rel="icon" href="https://p5js.org/assets/img/favicon.ico" /> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.0" />
 
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Import in all pages for p5.js and tailwind -->
+    <link rel="stylesheet" href="./build/styles.css" />
+    <script src="./p5lib/p5.min.js"></script>
+    <script src="./p5lib/p5.sound.min.js"></script>
+
+
+    <!-- MODIFY THIS TO POINT TO THE CORRECT SKETCH -->
+    <!-- <script src="./build//sketch-FOO.js"></script> -->
+
+    <title>Homepage</title>
   </head>
-
   <body>
-    <main class="container"></main>
+    <nav></nav>
+    <main class="flex min-h-screen items-center max-w-5xl mx-auto">
+      <table class="border-collapse table-auto w-full text-sm">
+        <thead>
+          <tr>
+            <th
+              class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left"
+            >
+              Sketch #
+            </th>
+            <th
+              class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left"
+            >
+              About
+            </th>
+            <th
+              class="border-b dark:border-slate-600 font-medium p-4 pl-8 pt-0 pb-3 text-slate-400 dark:text-slate-200 text-left"
+            >
+              Link
+            </th>
+          </tr>
+        </thead>
+        <tbody class="bg-white dark:bg-slate-800">
+          <!-- Row 1 -->
+          <tr>
+            <td
+              class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
+            >
+              1
+            </td>
+            <td
+              class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
+            >
+              Mouse Event
+            </td>
+            <td
+              class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
+            >
+              <a href="./sketches/sketch1">View here</a>
+            </td>
+          </tr>
+
+          <!-- Row 2 -->
+            <td
+              class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
+            >
+              2
+            </td>
+            <td
+              class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
+            >
+              Test
+            </td>
+            <td
+              class="border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400"
+            >
+              <a href="./sketches/sketch2">View here</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
   </body>
 </html>

@@ -30,3 +30,5 @@ function draw() {
 
   rect(0, 0, 200, 200);
 }
+
+export {};
