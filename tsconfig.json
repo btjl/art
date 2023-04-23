@@ -2,12 +2,13 @@
   "compilerOptions": {
     "module": "none",
     "noImplicitAny": true,
-    "outFile": "./build/build.js",
+    "outDir": "./build",
     "preserveConstEnums": true,
     "removeComments": true,
-    "rootDir": "./sketch/",
+    "rootDir": "./sketch",
     "sourceMap": true,
     "target": "es5",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "baseUrl": "./sketch"
   }
 }
